@@ -1,0 +1,23 @@
+@use '../variables' as *;
+@use '../funcsions' as *;
+@use '../media' as *;
+@use '../mixins' as *;
+
+.privacy{
+    &__inner{
+        padding-block: rem(120);
+        display: flex;
+        flex-direction: column;
+        row-gap: rem(30);
+        align-items: center;
+        
+    }
+    &__title{
+        font-size: rem(32);
+    }
+
+    &__subtitle{
+        line-height: rem(35);
+        font-size: rem(22);
+    }
+}
