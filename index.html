@@ -353,11 +353,11 @@
                     </p>
                 </div>
 
-                <form action="" class="contact__item-form">
-                    <input class="contact__form-input" type="text" placeholder="name" required>
-                    <input class="contact__form-input" type="email" placeholder="email" required>
-                    <textarea class="contact__form-message" placeholder="message" required></textarea>
-                    <button class="contact__form-button button">send message</button>
+                <form id="contact-form" class="contact__item-form" onsubmit="sendEmail(event)">
+                    <input class="contact__form-input" type="text" name="name" placeholder="name" required>
+                    <input class="contact__form-input" type="email" name="email" placeholder="email" required>
+                    <textarea class="contact__form-message" name="message" placeholder="message" required></textarea>
+                    <button class="contact__form-button button" type="submit">send message</button>
                 </form>
             </ul>
 
@@ -377,6 +377,13 @@
 
 
     <script src="js/main.js"></script>
+
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init('4q3EDvSbUERLdROh0'); 
+        })();
+    </script>
 </body>
 
 </html>
