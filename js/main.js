@@ -14,7 +14,7 @@ window.addEventListener('scroll', () => {
   function sendEmail(e) {
     e.preventDefault(); 
 
-    emailjs.sendForm('service_lttp8jr','template_s5bthgg', e.target, '4q3EDvSbUERLdROh0')
+    emailjs.sendForm('service_uctd67p','template_zasfcaj', e.target, '4q3EDvSbUERLdROh0')
       .then((result) => {
           alert('Message sent successfully!'); 
           e.target.reset(); 
