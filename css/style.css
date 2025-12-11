@@ -443,7 +443,7 @@ html, body {
 
   .hello__body {
     flex-direction: column;
-    row-gap: 40px;
+    row-gap: 39px;
   }
 
   .hello__icons {
