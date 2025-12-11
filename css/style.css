@@ -351,6 +351,10 @@ html, body {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
   }
+
+  .header__item{
+    font-size: 14px;
+  }
 }
 
 /* ============================================== */
@@ -438,7 +442,8 @@ html, body {
   }
 
   .hello__body {
-    column-gap: 10px;
+    flex-direction: column;
+    row-gap: 40px;
   }
 
   .hello__icons {
@@ -449,12 +454,7 @@ html, body {
 
 
 
-@media(max-width:685px) {
-  .hello__image {
-    display: none;
-  }
 
-}
 
 /* ===================================== */
 .skills {
